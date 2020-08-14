@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - BackGraund
   - 
   - 
   - 
@@ -40,4 +40,34 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGraund
+    uniqueID: 1359393329
+    locked: 0
+  - name: UI
+    uniqueID: 1978860585
+    locked: 0
+  - name: story1
+    uniqueID: 4049396847
+    locked: 0
+  - name: story1_UI
+    uniqueID: 4094973423
+    locked: 0
+  - name: story2
+    uniqueID: 250179681
+    locked: 0
+  - name: story2_UI
+    uniqueID: 3200537185
+    locked: 0
+  - name: story3
+    uniqueID: 662322829
+    locked: 0
+  - name: story3_UI
+    uniqueID: 1980472007
+    locked: 0
+  - name: story4
+    uniqueID: 107642653
+    locked: 0
+  - name: story4_UI
+    uniqueID: 1444543977
     locked: 0

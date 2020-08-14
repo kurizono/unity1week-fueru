@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AECBA384-9271-5931-0662-B0CB9DD20831}</ProjectGuid>
+    <ProjectGuid>{4D28F458-E933-41B9-C38C-89EFCDA3055A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,33 +62,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraMove.cs" />
+    <Compile Include="Assets\Prehub\Game_itemget.cs" />
+    <Compile Include="Assets\Scenes\Game\Game_CameraMove.cs" />
+    <Compile Include="Assets\Scenes\Game\Game_Catget.cs" />
+    <Compile Include="Assets\Scenes\Game\Game_Controll.cs" />
+    <Compile Include="Assets\Scenes\Game\Game_Itemcount.cs" />
+    <Compile Include="Assets\Scenes\Game\Game_Itemdrop.cs" />
+    <Compile Include="Assets\Scenes\Game\Game_Timer.cs" />
+    <Compile Include="Assets\Scenes\Title\Title_controller.cs" />
+    <Compile Include="Assets\Scenes\Title\Title_movie.cs" />
+    <Compile Include="Assets\Scenes\Title\story_move.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/Game/GameScript/unity1week(fueru)/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/Game/GameScript/unity1week(fueru)/unity1week-fueru/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
