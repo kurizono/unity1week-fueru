@@ -6,10 +6,9 @@ using UnityEngine.SceneManagement;
 
 
 //「ねこゲーム」のストーリ―用スクリプト(コピペで使用可能)
-public class story_move : MonoBehaviour
+public class explain_move : MonoBehaviour
 {
-    public GameObject[] Paperstory = new GameObject[4];
-    public Text[] storytext = new Text[7];
+    public GameObject[] Paperstory = new GameObject[3];
     public int PaperstoryNum;
     int storytextNum;
 
@@ -18,8 +17,6 @@ public class story_move : MonoBehaviour
     private List<Vector3> PaperstoryFirstRote = new List<Vector3> { new Vector3(0, 0, 90), new Vector3(0, 0, 90), new Vector3(0, 0, 90), new Vector3(0, 0, 90) };
     private List<Vector3> PaperstorySecondPosi = new List<Vector3> { new Vector3(0, 1, 0), new Vector3(0, 1, 0), new Vector3(0, 1, 0), new Vector3(0, 1, 0) };
     private List<Vector3> PaperstorySecondRote = new List<Vector3> { new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(0, 0, 0) };
-    //セリフを入れる
-    private List<string> storytextst = new List<string> { "ぼらんてぃあで" + "\r\n" + "おそうじにゃ", "てきとうに" + "\r\n" + "おいたにゃ", "なにかが" + "\r\n" + "できたにゃ", "なにかをいっぱいふやすにゃ", "がんばるねこ" + "\r\n" + "かわいいにゃ", "にゃー", "ぶらっくほーる" +　"\r\n" + "つよいにゃ" };
 
     public float nowtime = 0;
     private Vector3 vectorposi;
@@ -31,7 +28,6 @@ public class story_move : MonoBehaviour
     void Awake()
     {
         PaperstoryNum = Paperstory.Length;
-        storytextNum = storytext.Length;
     }
 
     void Start()
@@ -46,10 +42,6 @@ public class story_move : MonoBehaviour
         {
             Paperstory[i].transform.localPosition = PaperstoryFirstPosi[i];
             Paperstory[i].transform.eulerAngles = PaperstoryFirstRote[i];
-        }
-        for (int i = 0; i < storytextNum; i++)
-        {
-            storytext[i].text = "";
         }
         nowtime = 0;
         papernum = -1;
@@ -98,26 +90,6 @@ public class story_move : MonoBehaviour
         {
             Paperstory[papernum].transform.localPosition = PaperstorySecondPosi[papernum];
             Paperstory[papernum].transform.eulerAngles = new Vector3(0, 0, 0);
-
-            //ここでテキストを入れる場所とかをいじる
-            switch (papernum)
-            {
-                case 0:
-                    storytext[0].text = storytextst[0];
-                    break;
-                case 1:
-                    storytext[1].text = storytextst[1];
-                    storytext[2].text = storytextst[2];
-                    break;
-                case 2:
-                    storytext[3].text = storytextst[3];
-                    storytext[4].text = storytextst[4];
-                    break;
-                case 3:
-                    storytext[5].text = storytextst[5];
-                    storytext[6].text = storytextst[6];
-                    break;
-            }
             movingnow = 0;
         }
     }
@@ -130,10 +102,6 @@ public class story_move : MonoBehaviour
         {
             firstposi();
             movingnow = 0;
-        }
-        for (int j = 0; j < storytextNum; j++)
-        {
-            storytext[j].text = "";
         }
     }
 

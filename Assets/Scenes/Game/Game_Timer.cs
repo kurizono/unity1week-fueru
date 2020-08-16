@@ -10,7 +10,7 @@ public class Game_Timer : MonoBehaviour
     public Text timewatch;
     float starttime, timer;
     //制限時間
-    int MaxTime = 30;
+    int MaxTime = 20;
 
     private void Start()
     {
@@ -30,14 +30,14 @@ public class Game_Timer : MonoBehaviour
     //スタートの合図
     IEnumerator TimerView_Start_C()
     {
-        timewatch.text = "すたーと";
+        timewatch.text = "スタート";
         yield return new WaitForSeconds(1);
         controllcs.Game_situation = 2;
     }
     //おわりの合図
     IEnumerator TimerView_Finish_C()
     {
-        timewatch.text = "おわり";
+        timewatch.text = "オワリ";
         yield return new WaitForSeconds(1);
         controllcs.Game_situation = 4;
     }
@@ -52,6 +52,10 @@ public class Game_Timer : MonoBehaviour
     public void TimerCanvas()
     {
         timer = Mathf.Ceil(starttime + MaxTime - Time.time);
-        timewatch.text = "のこり" +　timer.ToString() + "びょう";
+        timewatch.text = "ノコリ　" +　timer.ToString() + "　ビョウ";
+        if(timer == 0)
+        {
+            controllcs.Game_situation = 3;
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game_Controll : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class Game_Controll : MonoBehaviour
     //0:始まったばかり(プレイヤー移動できない)　1:ゲームスタート  2:ゲーム中　3:ゲーム終了
     public int Game_situation = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         cameramovecs = GetComponent<Game_CameraMove>();
@@ -37,7 +37,7 @@ public class Game_Controll : MonoBehaviour
                 timercs.TimerView_Finish();
                 break;
             case 4:
-
+                SceneManager.LoadScene("Result");
                 break;
         }
     }
