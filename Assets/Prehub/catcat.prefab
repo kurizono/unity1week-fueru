@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 1565967680956908429}
   - component: {fileID: 936552038270434149}
   - component: {fileID: 3951493550392468492}
-  - component: {fileID: 2748473743284290106}
   - component: {fileID: 9069202002906357272}
   m_Layer: 0
   m_Name: catcat
-  m_TagString: Untagged
+  m_TagString: catcat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,24 +118,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.19388911, y: -0.5270322}
-  m_Size: {x: 2.2901294, y: 1.2471019}
-  m_Direction: 1
---- !u!70 &2748473743284290106
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6877554499154099265}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.5055184, y: 0.7}
-  m_Size: {x: 2.2289634, y: 1.4545517}
+  m_Offset: {x: 0.0004933133, y: 0.21162131}
+  m_Size: {x: 3.1131783, y: 2.7244132}
   m_Direction: 1
 --- !u!114 &9069202002906357272
 MonoBehaviour:

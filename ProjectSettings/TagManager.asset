@@ -3,7 +3,26 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - blackhole
+  - bloodA
+  - bloodB
+  - bloodAB
+  - bloodO
+  - boy
+  - girl
+  - human
+  - catcat
+  - catstamp
+  - mazemaze
+  - bug
+  - arrow
+  - return
+  - nanikaspace
+  - flame
+  - credit
+  - two
+  - storybutton
   layers:
   - Default
   - TransparentFX
@@ -38,6 +57,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back
+    uniqueID: 474411147
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -70,4 +92,7 @@ TagManager:
     locked: 0
   - name: story4_UI
     uniqueID: 1444543977
+    locked: 0
+  - name: arrow_UI
+    uniqueID: 832789085
     locked: 0

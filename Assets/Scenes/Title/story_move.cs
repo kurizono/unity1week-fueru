@@ -10,7 +10,7 @@ public class story_move : MonoBehaviour
 {
     public GameObject[] Paperstory = new GameObject[4];
     public Text[] storytext = new Text[7];
-    int PaperstoryNum;
+    public int PaperstoryNum;
     int storytextNum;
 
     //動かす前と動かした後の値を入れる
@@ -24,7 +24,7 @@ public class story_move : MonoBehaviour
     public float nowtime = 0;
     private Vector3 vectorposi;
     private float vectorinfo;
-    private int papernum = -1;
+    public int papernum = -1;
     private int movingnow = 0;
 
     // Start is called before the first frame update
@@ -56,10 +56,10 @@ public class story_move : MonoBehaviour
         movingnow = 0;
     }
 
-    //ストーリを動かす(ここを通せばいい)
-    public void Storymove()
+    //ボタンを押した時に動かす
+    public void Story_Button()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && movingnow == 0)
+        if (movingnow == 0)
         {
             if (papernum < PaperstoryNum)
             {
@@ -67,7 +67,12 @@ public class story_move : MonoBehaviour
                 StartMove();
             }
         }
-        else if (movingnow == 1)
+    }
+
+    //ストーリを動かす(常にここを通す)
+    public void Storymove()
+    {
+        if (movingnow == 1)
         {
             if (papernum < PaperstoryNum)
             {
